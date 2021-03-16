@@ -2,7 +2,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
+  appearance: none;
+  color: var(--font-color);
 }
 
 :root{
@@ -12,4 +13,67 @@
   --font-color-hover: #CA62FF;
   --bg-text-field : #303440;
   --highlight-text-field : #FFFFFF77;
+}
+
+body {
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  width: 30%;
+  margin-top: 10%;
+}
+
+/*----FORMULARIO----*/
+.input-container, .field {
+  background-color: var(--bg-text-field);
+}
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 5vh;
+  width: 90vw;
+  margin-top: 5%;
+  border-radius: 15px;
+}
+.icon {
+  width: 5%;
+  height: 50%;
+  margin: 3vw;
+}
+.field {
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+/*----SUBMIT----*/
+.login-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3vh;
+}
+.login-btn-input {
+  display: block;
+  width: 45%;
+  height: 5vh;
+  background-color: var(--bg-btn);
+  border: none;
+  border-radius: 25px;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+.inscricao {
+  position: absolute;
+  bottom: 3%;
 }
