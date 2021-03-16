@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
 :root{
   --bg : #000000;
   --bg-btn : #8332AC;
