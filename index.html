@@ -5,57 +5,63 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
   <title>My Secret Diary</title>
 </head>
 
 <body>
-  <img
-    src="resources/images/diary.svg" 
-    alt="Logo do My Secret Diary"
-    title="Logo My Secret Diary">
-  
-  <form>
-    <div class="login-input">
-      <img
-        src="resources/images/user.svg"
-        alt="Ícone de login - Uma fechadura"
-        title="Ícone de login">
-      <input
-        type="text"
-        class="username-field"
-        name="username"
-        value=""
-        required>
-    </div>
+    <img
+      class="logo"
+      src="resources/images/diary.svg" 
+      alt="Logo do My Secret Diary"
+      title="Logo My Secret Diary">
     
-    <div class="pswd-input">
-      <img
-        src="resources/images/pswd.svg"
-        alt="Ícone de senha - Uma chave"
-        title="Ícone de senha">
-      <input
-        type="password"
-        class="password-field"
-        name="password"
-        value=""
-        required>
-    </div>
-
-    <div class="login-btn">
-      <button
-        type="submit"
-        class="btn-input"
-        value="submit">
-        ENTRAR
-      </button>
+    <form action="" method="POST">
+      <div class="input-container">
+        <img
+          class="icon"
+          src="resources/images/user.svg"
+          alt="Ícone de login - Uma fechadura"
+          title="Ícone de login">
+        <input
+          type="text"
+          class="field"
+          name="username"
+          value=""
+          autofocus
+          required>
+      </div>
       
-      <a href="" title="Recuperar senha">Putz, esqueci minha senha!</a>
-    </div>
+      <div class="input-container">
+        <img
+          class="icon"
+          src="resources/images/pswd.svg"
+          alt="Ícone de senha - Uma chave"
+          title="Ícone de senha">
+        <input
+          type="password"
+          class="field"
+          name="password"
+          value=""
+          required>
+      </div>
+  
+      <div class="login-btn-container">
+        <button
+          type="submit"
+          class="login-btn-input"
+          value="submit">
+          ENTRAR
+        </button>
+        
+        <a href="" title="Recuperar senha">Putz, esqueci minha senha!</a>
 
-  </form>
-
-  <a href="" title="Fazer cadastro">Não possui uma conta? Faça sua inscrição aqui</a>
-
+  
+    </form>
+    <a class="subscribe" href="" title="Fazer cadastro">Não possui uma conta? Faça sua inscrição aqui</a>
+  </div>
 </body>
 
 </html>
