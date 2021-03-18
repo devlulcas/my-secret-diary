@@ -12,56 +12,31 @@
 </head>
 
 <body>
-    <img
-      class="logo"
-      src="resources/images/diary.svg" 
-      alt="Logo do My Secret Diary"
-      title="Logo My Secret Diary">
-    
-    <form action="" method="POST">
-      <div class="input-container">
-        <img
-          class="icon"
-          src="resources/images/user.svg"
-          alt="Ícone de login - Uma fechadura"
-          title="Ícone de login">
-        <input
-          type="text"
-          class="field"
-          name="username"
-          value=""
-          autofocus
-          required>
-      </div>
-      
-      <div class="input-container">
-        <img
-          class="icon"
-          src="resources/images/pswd.svg"
-          alt="Ícone de senha - Uma chave"
-          title="Ícone de senha">
-        <input
-          type="password"
-          class="field"
-          name="password"
-          value=""
-          required>
-      </div>
-  
-      <div class="login-btn-container">
-        <button
-          type="submit"
-          class="login-btn-input"
-          value="submit">
-          ENTRAR
-        </button>
-        
-        <a href="" title="Recuperar senha">Putz, esqueci minha senha!</a>
+  <img class="logo" src="resources/images/diary.svg" alt="Logo do My Secret Diary" title="Logo My Secret Diary">
 
+  <form action="" method="POST">
+    <!--Username-->
+    <label class="input-container">
+      <img class="icon" src="resources/images/user.svg" alt="Ícone de login - Uma fechadura" title="Ícone de login">
+      <input type="text" class="field" name="username" value="" placeholder="Usuário" autofocus required>
+    </label>
+
+    <!--Password-->
+    <label class="input-container">
+      <img class="icon" src="resources/images/pswd.svg" alt="Ícone de senha - Uma chave" title="Ícone de senha">
+      <input type="password" class="field" name="password" value="" placeholder="Senha" required>
+    </label>
+
+    <!--Confirm Login-->
+    <section class="login-btn-container">
+      <button type="submit" class="login-btn-input" value="submit">
+        ENTRAR
+      </button>
+      <a href="" title="Recuperar senha">Putz, esqueci minha senha!</a>
+    </section>
+  </form>
   
-    </form>
-    <a class="subscribe" href="" title="Fazer cadastro">Não possui uma conta? Faça sua inscrição aqui</a>
-  </div>
+  <a class="subscribe" href="" title="Fazer cadastro">Não possui uma conta? Faça sua inscrição aqui</a>
 </body>
 
 </html>
