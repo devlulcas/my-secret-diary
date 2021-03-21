@@ -60,11 +60,12 @@ body {
 
 .error-msg p {
   margin: auto;
+  font-size: calc(1rem + 0.2vw);
 }
 
 .icon {
-  width: 5%;
-  height: 100%;
+  width: 3%;
+  height: 80%;
   margin: 3vw;
 }
 
@@ -121,6 +122,20 @@ a:hover {
   bottom: 3%;
 }
 
+
+@media (min-width: 600px) {
+
+  .logo {
+    width: 20%;
+    margin-top: 7%;
+  }
+
+  .icon {
+    width: 1.5%;
+    margin: 2vw;
+  }
+}
+
 @media (min-width: 750px) {
   body {
     padding-top: 0%;
@@ -129,11 +144,6 @@ a:hover {
   .logo {
     width: 15%;
     margin-top: 7%;
-  }
-
-  .icon {
-    width: 3%;
-    margin: 2vw;
   }
 }
 
