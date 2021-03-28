@@ -17,6 +17,8 @@
   --font-color: #ffffff;
   --font-color-hover: #e9beff;
   --bg-text-field: #303440;
+  --bg-text-field-correct: #388d66;
+  --bg-text-field-wrong: #6b0000;
   --highlight-text-field: #ffffff77;
 }
 
@@ -26,7 +28,7 @@ body {
   display: flex;
   width: 100vw;
   height: 100vh;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: center;
 }
 
