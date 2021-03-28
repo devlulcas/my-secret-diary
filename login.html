@@ -18,20 +18,20 @@
 <body>
   <img class="logo" src="resources/images/diary.svg" alt="Logo do My Secret Diary" title="Logo My Secret Diary">
 
-  <form action="" method="POST">
+  <form action="" method="POST" data-form>
     <div class="error-container" data-warning-visible="false">
-      <span class="error-message"></span>
+      <span class="error-message" data-warning-text></span>
     </div>
     <!--Username-->
     <div class="input-container">
       <img class="icon" src="resources/images/user.svg" alt="Ícone de login - Uma fechadura" title="Ícone de login">
-      <input type="text" class="field" name="username" data-field="username" value="" autocomplete="off" placeholder="Usuário" autofocus required>
+      <input type="text" class="field" name="username" data-field="username" value="" autocomplete="off" placeholder="Usuário" required>
     </div>
 
     <!--Password-->
     <div class="input-container">
       <img class="icon" src="resources/images/pswd.svg" alt="Ícone de senha - Uma chave" title="Ícone de senha">
-      <input type="password" class="field" name="password" data-field="password" value="" placeholder="Senha" required>
+      <input type="password" class="field" name="password" data-field="password" value="" placeholder="Senha" minlength="8" required>
     </div>
 
     <!--Confirm Login-->
@@ -44,6 +44,8 @@
   </form>
 
   <a class="subscribe" href="" title="Fazer cadastro">Não possui uma conta? Faça sua inscrição aqui</a>
+
+  <script src="js/validation.js"></script>
 </body>
 
 </html>
